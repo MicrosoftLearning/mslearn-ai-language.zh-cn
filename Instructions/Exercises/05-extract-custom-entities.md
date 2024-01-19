@@ -16,10 +16,10 @@ lab:
 
 1. 在浏览器中，打开 Azure 门户 (`https://portal.azure.com`)，并使用 Microsoft 帐户登录。
 1. 选择“创建资源”按钮，搜索“语言”，并创建“Azure AI 语言服务”资源。 当需要“其他功能”时，请选择“自定义文本分类和提取”。 使用以下设置创建资源：
-    - **订阅**：Azure 订阅
+    - **订阅**：*Azure 订阅*
     - **资源组**：选择或创建资源组
-    - **区域**：选择任何可用区域
-    - **名称**：输入唯一名称
+    - **区域**：*选择任何可用区域*
+    - **名称**：*输入唯一名称*
     - **定价层**：选择 **F0**（*免费*层）；如果 F 不可用，请选择 **S**（*标准*层）。
     - 存储帐户：新存储帐户
       - 存储帐户名称：输入唯一的名称。
@@ -134,11 +134,11 @@ lab:
 > **提示**：如果已克隆 **mslearn-ai-language** 存储库，请在 Visual Studio Code 中打开它。 否则，请按照以下步骤将其克隆到开发环境。
 
 1. 启动 Visual Studio Code。
-2. 打开面板 (SHIFT+CTRL+P) 并运行“Git: 克隆”命令，以将 `https://github.com/MicrosoftLearning/mslearn-ai-language` 存储库克隆到本地文件夹（任意文件夹均可）。
+2. 打开面板 (SHIFT+CTRL+P) 并运行“**Git：克隆**”命令，以将 `https://github.com/MicrosoftLearning/mslearn-ai-language` 存储库克隆到本地文件夹（任意文件夹均可）。
 3. 克隆存储库后，在 Visual Studio Code 中打开文件夹。
 4. 等待其他文件安装完毕，以支持存储库中的 C# 代码项目。
 
-    > **注意**：如果系统提示你添加生成和调试所需的资产，请选择“以后再说”。
+    > **注意**：如果系统提示你添加生成和调试所需的资产，请选择**以后再说**。
 
 ## 配置应用程序
 
@@ -214,7 +214,7 @@ lab:
     ai_client = TextAnalyticsClient(endpoint=ai_endpoint, credential=credential)
     ```
 
-1. 在 **Main** 函数中，请注意，现有代码读取项目**文件夹中的所有文件**，并创建包含其内容的列表。 对于 C# 代码，TextDocumentInput** 对象的列表**用于将文件名作为 ID 和语言包含在内。 在 Python 中，使用文本内容的简单列表。
+1. 在 **Main** 函数中，注意现有代码会读取“**广告**”文件夹中的所有文件，并创建包含其内容的列表。 对于 C# 代码，TextDocumentInput** 对象的列表**用于将文件名作为 ID 和语言包含在内。 在 Python 中，使用文本内容的简单列表。
 1. 查找注释 **提取实体** 并添加以下代码：
 
     **C#** ：Program.cs
