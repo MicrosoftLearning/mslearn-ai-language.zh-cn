@@ -22,7 +22,7 @@ lab:
     - **订阅**：Azure 订阅
     - **资源组**：*创建或选择资源组*
     - 区域：选择任何可用位置
-    - **名称**：输入唯一名称
+    - **名称**：*输入唯一名称*
     - **定价层**：选择 **F0**（*免费*层）；如果 F 不可用，请选择 **S**（*标准*层）。
     - **Azure 搜索位置**：在与语言资源相同的全球区域中选择一个位置。
     - **Azure 搜索定价层**：免费 (F)（如果该层级不可用，请选择基本 (B)）
@@ -81,7 +81,7 @@ lab:
     - **问题**：`What are Microsoft credentials?`
     - **答案**：`Microsoft credentials enable you to validate and prove your skills with Microsoft technologies.`
 1. 选择“完成”。
-1. 在创建的“什么是 Microsoft 认证？”问题页面中，展开“备用问题” 。 然后添加备用问题 `How can I demonstrate my Microsoft technology skills?`。
+1. 在创建的“Microsoft 凭据是什么？”问题页面中，展开“备用问题”********。 然后添加备用问题 `How can I demonstrate my Microsoft technology skills?`。
 
     在某些情况下，让用户能够跟进答案以创建多回合对话是有意义的，这让用户能够以迭代方式细化问题，从而得到他们所需的答案。
 
@@ -122,11 +122,11 @@ lab:
 > **提示**：如果已克隆 **mslearn-ai-language** 存储库，请在 Visual Studio Code 中打开它。 否则，请按照以下步骤将其克隆到开发环境。
 
 1. 启动 Visual Studio Code。
-2. 打开面板 (SHIFT+CTRL+P) 并运行“Git: 克隆”命令，以将 `https://github.com/MicrosoftLearning/mslearn-ai-language` 存储库克隆到本地文件夹（任意文件夹均可）。
+2. 打开面板 (SHIFT+CTRL+P) 并运行“**Git：克隆**”命令，以将 `https://github.com/MicrosoftLearning/mslearn-ai-language` 存储库克隆到本地文件夹（任意文件夹均可）。
 3. 克隆存储库后，在 Visual Studio Code 中打开文件夹。
 4. 等待其他文件安装完毕，以支持存储库中的 C# 代码项目。
 
-    > **注意**：如果系统提示你添加生成和调试所需的资产，请选择“以后再说”。
+    > **注意**：如果系统提示你添加生成和调试所需的资产，请选择**以后再说**。
 
 ## 配置应用程序
 
@@ -253,7 +253,7 @@ lab:
 
 ## 清理资源
 
-提示：如果已完成浏览 Azure Cosmos DB，则可以删除在本练习中创建的资源组。 下面介绍如何操作：
+提示：如果已完成浏览 Azure Cosmos DB，则可以删除在本练习中创建的资源组。 操作步骤如下：
 
 1. 打开 Azure 门户 (`https://portal.azure.com`)，然后使用与你的 Azure 订阅关联的 Microsoft 帐户登录。
 2. 浏览到在此实验室中创建的 Azure AI 语言资源。
