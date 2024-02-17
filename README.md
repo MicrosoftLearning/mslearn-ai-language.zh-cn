@@ -1,2 +1,2 @@
-# mslearn-ai-language.zh-cn
-Chinese Simp repo
+# mslearn-ai-language
+Azure AI 语言模块的实验室文件
