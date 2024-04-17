@@ -24,7 +24,7 @@ lab:
     - **名称**：输入唯一名称。
     - **定价层**：选择 **F0**（*免费*层）；如果 F 不可用，请选择 **S**（*标准*层）。
     - 负责任的 AI 声明：同意
-1. 选择“查看 + 创建”。
+1. 选择“查看 + 创建”，再选择“创建”以预配资源。
 1. 等待部署完成，然后转到部署的资源。
 1. 查看“密钥和终结点”**** 页。 在练习的后面部分，你将需要此页面上的信息。
 
@@ -35,11 +35,11 @@ lab:
 > **提示**：如果已克隆 **mslearn-ai-language** 存储库，请在 Visual Studio Code 中打开它。 否则，请按照以下步骤将其克隆到开发环境。
 
 1. 启动 Visual Studio Code。
-2. 打开面板 (SHIFT+CTRL+P) 并运行“Git: 克隆”命令，以将 `https://github.com/MicrosoftLearning/mslearn-ai-language` 存储库克隆到本地文件夹（任意文件夹均可）。
+2. 打开面板 (SHIFT+CTRL+P) 并运行“**Git：克隆**”命令，以将 `https://github.com/MicrosoftLearning/mslearn-ai-language` 存储库克隆到本地文件夹（任意文件夹均可）。
 3. 克隆存储库后，在 Visual Studio Code 中打开文件夹。
 4. 等待其他文件安装完毕，以支持存储库中的 C# 代码项目。
 
-    > **注意**：如果系统提示你添加生成和调试所需的资产，请选择“以后再说”。
+    > **注意**：如果系统提示你添加生成和调试所需的资产，请选择**以后再说**。
 
 ## 配置应用程序
 
@@ -169,7 +169,7 @@ lab:
     print("\nSentiment: {}".format(sentimentAnalysis.sentiment))
     ```
 
-1. 保存所做的更改。 返回到 read-text 文件夹的集成终端，输入以下命令以运行程序：
+1. 保存所做更改。 返回到 read-text 文件夹的集成终端，输入以下命令以运行程序：
 1. 观察输出，注意已检测到评论的情绪。
 
 ## 添加代码以标识关键短语
@@ -279,7 +279,7 @@ lab:
 
 ## 清理资源
 
-提示：如果已完成浏览 Azure Cosmos DB，则可以删除在本练习中创建的资源组。 下面介绍如何操作：
+提示：如果已完成浏览 Azure Cosmos DB，则可以删除在本练习中创建的资源组。 操作步骤如下：
 
 1. 打开 Azure 门户 (`https://portal.azure.com`)，然后使用与你的 Azure 订阅关联的 Microsoft 帐户登录。
 
