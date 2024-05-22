@@ -45,8 +45,8 @@ lab:
 
 已提供适用于 C# 和 Python 的应用程序，以及用于测试汇总情况的示例文本文件。 这两个应用具有相同的功能。 首先，你将完成应用程序的一些关键部分，使其能够使用 Azure AI 语言资源。
 
-1. 在 Visual Studio Code 的“资源管理器”窗格中，浏览到 05-analyze-text 文件夹，并根据你的语言首选项展开 C-Sharp 文件夹或 Python 文件夹   。 每个文件夹都包含要在其中集成 Azure AI 语言文本分析功能的应用的语言特定文件。
-2. 右键单击 text-analysis 文件夹，并打开集成终端。 然后，通过运行语言首选项的适当命令来安装 Azure AI 语言文本分析 SDK 包。 对于 Python 练习，还应安装 `dotenv` 包：
+1. 在 Visual Studio Code 的“资源管理器”**** 窗格中，浏览到 **Labfiles/01-analyze-text** 文件夹，然后根据语言首选项及其包含的“text-analysis”**** 文件夹展开 **CSharp** 或 **Python** 文件夹。 每个文件夹都包含要在其中集成 Azure AI 语言文本分析功能的应用的语言特定文件。
+2. 右键单击包含代码文件的“text-analysis”文件夹，并打开集成终端。**** 然后，通过运行语言首选项的适当命令来安装 Azure AI 语言文本分析 SDK 包。 对于 Python 练习，还应安装 `dotenv` 包：
 
     **C#：**
 
@@ -61,7 +61,7 @@ lab:
     pip install python-dotenv
     ```
 
-3. 在 **资源管理器** 窗格中的文本 **分析** 文件夹中，打开首选语言的配置文件
+3. 前往“资源管理器”窗格，在“text-analysis”文件夹中，打开首选语言的配置文件********
 
     - **C#** ：appsettings.json
     - **Python**：.env
