@@ -301,6 +301,9 @@ lab:
 1. 启动 Visual Studio Code。
 2. 打开面板 (SHIFT+CTRL+P) 并运行“**Git：克隆**”命令，以将 `https://github.com/MicrosoftLearning/mslearn-ai-language` 存储库克隆到本地文件夹（任意文件夹均可）。
 3. 克隆存储库后，在 Visual Studio Code 中打开文件夹。
+
+    > **注意**：如果 Visual Studio Code 显示一条弹出消息，提示你信任打开的代码，请单击弹出窗口中的“是，我信任该作者”选项****。
+
 4. 等待其他文件安装完毕，以支持存储库中的 C# 代码项目。
 
     > **注意**：如果系统提示你添加生成和调试所需的资产，请选择**以后再说**。

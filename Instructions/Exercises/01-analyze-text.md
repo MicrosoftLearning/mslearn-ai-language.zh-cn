@@ -37,6 +37,9 @@ lab:
 1. 启动 Visual Studio Code。
 2. 打开面板 (SHIFT+CTRL+P) 并运行“**Git：克隆**”命令，以将 `https://github.com/MicrosoftLearning/mslearn-ai-language` 存储库克隆到本地文件夹（任意文件夹均可）。
 3. 克隆存储库后，在 Visual Studio Code 中打开文件夹。
+
+    > **注意**：如果 Visual Studio Code 显示一条弹出消息，提示你信任打开的代码，请单击弹出窗口中的“是，我信任该作者”选项****。
+
 4. 等待其他文件安装完毕，以支持存储库中的 C# 代码项目。
 
     > **注意**：如果系统提示你添加生成和调试所需的资产，请选择**以后再说**。
@@ -45,8 +48,8 @@ lab:
 
 已提供适用于 C# 和 Python 的应用程序，以及用于测试汇总情况的示例文本文件。 这两个应用具有相同的功能。 首先，你将完成应用程序的一些关键部分，使其能够使用 Azure AI 语言资源。
 
-1. 在 Visual Studio Code 的“资源管理器”窗格中，浏览到 05-analyze-text 文件夹，并根据你的语言首选项展开 C-Sharp 文件夹或 Python 文件夹   。 每个文件夹都包含要在其中集成 Azure AI 语言文本分析功能的应用的语言特定文件。
-2. 右键单击 text-analysis 文件夹，并打开集成终端。 然后，通过运行语言首选项的适当命令来安装 Azure AI 语言文本分析 SDK 包。 对于 Python 练习，还应安装 `dotenv` 包：
+1. 在 Visual Studio Code 的“资源管理器”**** 窗格中，浏览到 **Labfiles/01-analyze-text** 文件夹，然后根据语言首选项及其包含的“text-analysis”**** 文件夹展开 **CSharp** 或 **Python** 文件夹。 每个文件夹都包含要在其中集成 Azure AI 语言文本分析功能的应用的语言特定文件。
+2. 右键单击包含代码文件的“text-analysis”文件夹，并打开集成终端。**** 然后，通过运行语言首选项的适当命令来安装 Azure AI 语言文本分析 SDK 包。 对于 Python 练习，还应安装 `dotenv` 包：
 
     **C#：**
 
@@ -61,7 +64,7 @@ lab:
     pip install python-dotenv
     ```
 
-3. 在 **资源管理器** 窗格中的文本 **分析** 文件夹中，打开首选语言的配置文件
+3. 前往“资源管理器”窗格，在“text-analysis”文件夹中，打开首选语言的配置文件********
 
     - **C#** ：appsettings.json
     - **Python**：.env
