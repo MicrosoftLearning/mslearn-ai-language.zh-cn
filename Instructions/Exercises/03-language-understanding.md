@@ -119,7 +119,7 @@ lab:
 
 1. 选择“模型性能”页，然后选择“时钟”模型 。 查看总体和每个意向的评估指标（精准率、召回率和 F1 分数），以及由在训练时执行的评估生成的混淆矩阵（请注意，由于样本语句数量较少，并非所有意向都可能包含在结果中）   。
 
-    > **注意**：若要详细了解评估指标，请参阅[文档](/azure/ai-services/language-service/conversational-language-understanding/concepts/evaluation-metrics)
+    > **注意**：若要详细了解评估指标，请参阅[文档](https://learn.microsoft.com/azure/ai-services/language-service/conversational-language-understanding/concepts/evaluation-metrics)
 
 1. 在“部署模型”页上，选择“添加部署” 。
 
