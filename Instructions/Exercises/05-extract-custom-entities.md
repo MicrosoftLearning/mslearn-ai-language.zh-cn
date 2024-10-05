@@ -80,6 +80,8 @@ lab:
         - **Blob 存储容器**：分类
         - **你的文件是否标有类？**：不，我需要将我的文件标记为该项目的一部分
 
+> **提示**：如果收到有关无权执行此操作的错误，则需要添加角色分配。 为修复此错误，我们在运行实验室的用户的存储账户上添加了角色“存储 Blob 数据参与者”。 可在[文档页上](https://learn.microsoft.com/azure/ai-services/language-service/custom-named-entity-recognition/how-to/create-project?tabs=portal%2Clanguage-studio#enable-identity-management-for-your-resource)找到更多详细信息。
+
 ## 标记数据
 
 创建项目后，需要标记数据以训练模型如何识别实体。
