@@ -23,7 +23,7 @@ lab:
     - 负责任的 AI 声明：同意
 1. 选择“查看 + 创建”，再选择“创建”以预配资源。
 1. 等待部署完成，然后转到部署的资源。
-1. 查看“密钥和终结点”**** 页。 在练习的后面部分，你将需要此页面上的信息。
+1. 查看“密钥和终结点”页。 在练习的后面部分，你将需要此页面上的信息。
 
 ## 准备在 Visual Studio Code 中开发应用
 
@@ -32,10 +32,10 @@ lab:
 > **提示**：如果已克隆 **mslearn-ai-language** 存储库，请在 Visual Studio Code 中打开它。 否则，请按照以下步骤将其克隆到开发环境。
 
 1. 启动 Visual Studio Code。
-2. 打开面板 (SHIFT+CTRL+P) 并运行“**Git：克隆**”命令，以将 `https://github.com/MicrosoftLearning/mslearn-ai-language` 存储库克隆到本地文件夹（任意文件夹均可）。
+2. 打开面板 (SHIFT+CTRL+P) 并运行“**Git: Clone**”命令，以将 `https://github.com/MicrosoftLearning/mslearn-ai-language` 存储库克隆到本地文件夹（任意文件夹均可）。
 3. 克隆存储库后，在 Visual Studio Code 中打开文件夹。
 
-    > **注意**：如果 Visual Studio Code 显示一条弹出消息，提示你信任打开的代码，请单击弹出窗口中的“是，我信任该作者”选项****。
+    > **注意**：如果 Visual Studio Code 显示一条弹出消息，提示你信任打开的代码，请单击弹出窗口中的“是，我信任该作者”选项。
 
 4. 等待其他文件安装完毕，以支持存储库中的 C# 代码项目。
 
@@ -45,8 +45,8 @@ lab:
 
 已提供适用于 C# 和 Python 的应用程序。 这两个应用具有相同的功能。 在本练习中，你将使用 Azure OpenAI 资源完成应用程序的一些关键部分以进行启用。
 
-1. 在 Visual Studio Code 的“资源管理器”窗格中，浏览到 06-translate-text 文件夹，并根据你的语言首选项展开 C-Sharp 文件夹或 Python 文件夹   。 每个文件夹都包含要在其中集成 Azure AI 翻译功能的应用的语言特定的代码文件。
-2. 右键单击 04-containers 文件夹，并打开集成终端。 然后通过运行适用于你的语言首选项的命令，安装人脸 SDK 包：
+1. 在 Visual Studio Code 的“资源管理器”窗格中，浏览到 **Labfiles/06b-translator-sdk** 文件夹，并根据你的语言首选项展开 **C-Sharp** 文件夹或 **Python** 文件夹及其所包含的 **translate-text** 文件夹。 每个文件夹都包含要在其中集成 Azure AI 翻译功能的应用的语言特定的代码文件。
+2. 右键单击包含代码文件的 **translate-text** 文件夹，并打开集成终端。 然后通过运行适用于你的语言首选项的命令，安装人脸 SDK 包：
 
     **C#：**
 
@@ -207,12 +207,12 @@ lab:
 
 现在已准备好测试应用程序。
 
-1. 在 read-text 文件夹的集成终端中，输入以下命令以运行程序：
+1. 在 **Translate text** 文件夹的集成终端中，输入以下命令以运行程序：
 
     - **C#** ：`dotnet run`
     - **Python**：`python translate.py`
 
-    > **提示**：可以使用 **终端工具栏中的“最大化面板大小** ”图标**^** 查看更多控制台文本。
+    > **提示**：可以使用 **终端工具栏中的“最大化面板大小** ”图标 (**^**) 查看更多控制台文本。
 
 1. 出现提示时，输入显示列表中的有效目标语言。
 1. 输入要翻译的短语（例如 `This is a test` 或 `C'est un test`）并查看结果，结果应检测源语言并将文本翻译为目标语言。

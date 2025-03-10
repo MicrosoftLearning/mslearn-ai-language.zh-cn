@@ -30,7 +30,7 @@ lab:
     - 负责任的 AI 声明：同意
 1. 选择“查看 + 创建”，再选择“创建”以预配资源。
 1. 等待部署完成，然后转到部署的资源。
-1. 查看“密钥和终结点”**** 页。 在练习的后面部分，你将需要此页面上的信息。
+1. 查看“密钥和终结点”页。 在练习的后面部分，你将需要此页面上的信息。
 
 ## 准备在 Visual Studio Code 中开发应用
 
@@ -39,10 +39,10 @@ lab:
 > **提示**：如果已克隆 **mslearn-ai-language** 存储库，请在 Visual Studio Code 中打开它。 否则，请按照以下步骤将其克隆到开发环境。
 
 1. 启动 Visual Studio Code。
-1. 打开面板 (SHIFT+CTRL+P) 并运行“**Git：克隆**”命令，以将 `https://github.com/MicrosoftLearning/mslearn-ai-language` 存储库克隆到本地文件夹（任意文件夹均可）。
+1. 打开面板 (SHIFT+CTRL+P) 并运行“**Git: Clone**”命令，以将 `https://github.com/MicrosoftLearning/mslearn-ai-language` 存储库克隆到本地文件夹（任意文件夹均可）。
 1. 克隆存储库后，在 Visual Studio Code 中打开文件夹。
 
-    > **注意**：如果 Visual Studio Code 显示一条弹出消息，提示你信任打开的代码，请单击弹出窗口中的“是，我信任该作者”选项****。
+    > **注意**：如果 Visual Studio Code 显示一条弹出消息，提示你信任打开的代码，请单击弹出窗口中的“是，我信任该作者”选项。
 
 1. 等待其他文件安装完毕，以支持存储库中的 C# 代码项目。
 
@@ -52,7 +52,7 @@ lab:
 
 已提供适用于 C# 和 Python 的应用程序。 这两个应用具有相同的功能。 在本练习中，你将使用 Azure OpenAI 资源完成应用程序的一些关键部分以进行启用。
 
-1. 在 Visual Studio Code 的“资源管理器”窗格中，浏览到 07-speech 文件夹，并根据你的语言首选项展开 C-Sharp 文件夹或 Python 文件夹。 每个文件夹都包含要在其中集成 Azure AI 语音功能的应用的语言特定代码文件。
+1. 在 Visual Studio Code 的“资源管理器”窗格中，浏览到 **Labfiles/07-speech** 文件夹，并根据你的语言首选项展开 **C-Sharp** 文件夹或 **Python** 文件夹和它所包含的 **speaking-clock** 文件夹。 每个文件夹都包含要在其中集成 Azure AI 语音功能的应用的语言特定代码文件。
 1. 右键单击 speaking-clock 文件夹，并打开集成终端。 然后通过运行适用于你的语言首选项的命令，安装语音 SDK 包：
 
     **C#**
@@ -67,14 +67,14 @@ lab:
     pip install azure-cognitiveservices-speech==1.30.0
     ```
 
-1. 在 **资源管理器** 窗格中，在 **讲钟** 文件夹中，打开首选语言的配置文件
+1. 在 **资源管理器** 窗格中，在 **speaking-clock** 文件夹中，打开首选语言的配置文件
 
     - **C#** ：appsettings.json
     - **Python**：.env
 
 1. 更新配置值，以包含**所创建的 Azure AI 语音资源中的区域**和**密钥**（在 Azure 门户 中 Azure AI 语音资源的“密钥和终结点 **”页上可用**）。
 
-    > **注意**：请务必为资源添加 *区域* ， <u>而不是</u> 终结点！
+    > **注意**：请务必为资源添加 *区域*，<u>而不是</u> 终结点！
 
 1. 保存此配置文件。
 
@@ -313,7 +313,7 @@ lab:
     speech_synthesizer = speech_sdk.SpeechSynthesizer(speech_config)
     ```
 
-    > 默认音频配置使用默认系统音频设备进行输出，因此你无需显式提供 AudioConfig。**** 如果需要将音频输出重定向到某个文件，可以使用包含文件路径的 AudioConfig 来执行此操作。
+    > 默认音频配置使用默认系统音频设备进行输出，因此你无需显式提供 AudioConfig。 如果需要将音频输出重定向到某个文件，可以使用包含文件路径的 AudioConfig 来执行此操作。
 
 1. 在 TellTime 函数的注释“合成语音输出”下，添加以下代码以生成语音输出，注意不要替换输出响应的函数末尾的代码 ：
 
