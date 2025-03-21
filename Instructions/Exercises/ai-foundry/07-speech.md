@@ -4,6 +4,10 @@ lab:
   module: Module 4 - Create speech-enabled apps with Azure AI services
 ---
 
+<!--
+Possibly update to use standalone AI Service instead of Foundry?
+-->
+
 # 识别和合成语音
 
 语音服务是一种 Azure 认知服务，提供与语音相关的各种功能，包括：
