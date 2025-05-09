@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
-    <RootNamespace>text_analysis</RootNamespace>
+    <RootNamespace>speech_translation</RootNamespace>
   </PropertyGroup>
 
     <ItemGroup>
