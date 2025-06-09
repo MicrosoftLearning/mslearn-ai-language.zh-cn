@@ -6,7 +6,7 @@ lab:
 
 # 开发支持音频的聊天应用
 
-在本练习中，你将使用 *Phi-4-multimodal-instruct* 生成式 AI 模型生成对包含音频文件的提示的响应。 你将开发一款应用，该应用使用 Azure AI Foundry 和 Azure AI 模型推理服务为杂货店中的新鲜农产品提供 AI 帮助。
+在本练习中，你将使用 *Phi-4-multimodal-instruct* 生成式 AI 模型生成对包含音频文件的提示的响应。 你将开发一款应用，利用 Azure AI Foundry 和 Azure AI 模型推理服务，为产品供应商公司提供 AI 支持，汇总客户留下的语音信息。
 
 此练习大约需要 **30** 分钟。
 
@@ -95,13 +95,13 @@ lab:
     **Python**
 
     ```
-    cd mslearn-ai-audio/Labfiles/09-audio-chat/python
+    cd mslearn-ai-audio/Labfiles/09-audio-chat/Python
     ```
 
     **C#**
 
     ```
-    cd mslearn-ai-audio/Labfiles/09-audio-chat/c-sharp
+    cd mslearn-ai-audio/Labfiles/09-audio-chat/C-sharp
     ```
 
 1. 在 Cloud Shell 命令行窗格中，输入以下命令安装将使用的库：
@@ -111,7 +111,7 @@ lab:
     ```
     python -m venv labenv
     ./labenv/bin/Activate.ps1
-    pip install python-dotenv azure-identity azure-ai-projects azure-ai-inference
+    pip install -r requirements.txt azure-identity azure-ai-projects azure-ai-inference
     ```
 
     **C#**
@@ -173,9 +173,6 @@ lab:
         SystemMessage,
         UserMessage,
         TextContentItem,
-        AudioContentItem,
-        InputAudio,
-        AudioContentFormat,
     )
     ```
 
@@ -230,13 +227,13 @@ lab:
 
 1. 在 **audio-chat.py** 文件的代码编辑器中，在循环部分的注释“**获取对音频输入的响应**”下，添加以下代码，以提交包含以下音频的提示：
 
-    <video controls src="../media/manzanas.mp4" title="对苹果的请求" width="150"></video>
+    <video controls src="../media/avocados.mp4" title="一份牛油果订单" width="150"></video>
 
     **Python**
 
     ```python
     # Get a response to audio input
-    file_path = "https://github.com/microsoftlearning/mslearn-ai-language/raw/refs/heads/main/labfiles/09-audio-chat/data/manzanas.mp3"
+    file_path = "https://github.com/MicrosoftLearning/mslearn-ai-language/raw/refs/heads/main/Labfiles/09-audio-chat/data/avocados.mp3"
     response = chat_client.complete(
         messages=[
             SystemMessage(system_message),
@@ -258,7 +255,7 @@ lab:
 
     ```csharp
     // Get a response to audio input
-    string audioUrl = "https://github.com/microsoftlearning/mslearn-ai-language/raw/refs/heads/main/labfiles/09-audio-chat/data/manzanas.mp3";
+    string audioUrl = "https://github.com/MicrosoftLearning/mslearn-ai-language/raw/refs/heads/main/Labfiles/09-audio-chat/data/avocados.mp3";
     var requestOptions = new ChatCompletionsOptions()
     {
         Messages =
@@ -290,21 +287,25 @@ lab:
     dotnet run
     ```
 
-1. 出现提示时，输入提示 `What is this customer saying in English?`
+1. 出现提示时，输入提示 
+
+    ```
+    Can you summarize this customer's voice message?
+    ```
 
 1. 查看回应。
 
-### 使用不同的提示
+### 使用不同的音频文件
 
 1. 在应用代码的代码编辑器中，查找之前在注释“**获取对音频输入的响应**”下添加的代码。 然后，按如下所示修改代码以选择其他音频文件：
 
-    <video controls src="../media/caomei.mp4" title="对草莓的请求" width="150"></video>
+    <video controls src="../media/fresas.mp4" title="对草莓的请求" width="150"></video>
 
     **Python**
 
     ```python
     # Get a response to audio input
-    file_path = "https://github.com/microsoftlearning/mslearn-ai-language/raw/refs/heads/main/labfiles/09-audio-chat/data/caomei.mp3"
+    file_path = "https://github.com/MicrosoftLearning/mslearn-ai-language/raw/refs/heads/main/Labfiles/09-audio-chat/data/fresas.mp3"
     response = chat_client.complete(
         messages=[
             SystemMessage(system_message),
@@ -326,7 +327,7 @@ lab:
 
     ```csharp
     // Get a response to audio input
-    string audioUrl = "https://github.com/microsoftlearning/mslearn-ai-language/raw/refs/heads/main/labfiles/09-audio-chat/data/caomei.mp3";
+    string audioUrl = "https://github.com/MicrosoftLearning/mslearn-ai-language/raw/refs/heads/main/Labfiles/09-audio-chat/data/fresas.mp3";
     var requestOptions = new ChatCompletionsOptions()
     {
         Messages =
@@ -358,10 +359,10 @@ lab:
     dotnet run
     ```
 
-1. 出现提示时，输入以下提示：
-
+1. 出现提示时，输入以下提示： 
+    
     ```
-    A customer left this voice message, can you summarize it?
+    Can you summarize this customer's voice message? Is it time-sensitive?
     ```
 
 1. 查看回应。 然后输入`quit`以退出程序。
